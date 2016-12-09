@@ -6,14 +6,16 @@
 <h2>Persons list</h2>
 <ul>
   <?php
-  $persons = gsbtb_getPersons() || [];
+  $persons = [];
+  //$persons = gsbtb_getPersons();
   if (count($persons) > 0) {
     foreach ( $persons as $person )
-      get_template_part( 'persons-list-item', $person );
+      set_query_var( 'person', $person );
+      get_template_part( 'persons-list-item' );
   }
   else {
     ?>
-    No persons.
+    No people yet.
     <?php
   }
   ?>

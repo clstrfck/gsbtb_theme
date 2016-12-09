@@ -11,7 +11,7 @@
 /**
  * Include the GSBTB API Layer
  */
-include( 'gsbtb_tool_clientv0.1.php' );
+include( 'gsbtb_functions.php' );
 
 
 if ( ! function_exists( 'gsbtb_theme_setup' ) ) :

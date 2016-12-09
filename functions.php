@@ -7,6 +7,13 @@
  * @package gsbtb_theme
  */
 
+
+/**
+ * Include the GSBTB API Layer
+ */
+include( 'gsbtb_tool_clientv0.1.php' );
+
+
 if ( ! function_exists( 'gsbtb_theme_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
